@@ -11,10 +11,10 @@ const Intro = () => {
     <div className="intro">
       <div>
         <h1>
-          Take Control of <span className="accent">Your Money</span>
+          Set Financial Goals; <span className="accent">Become Accountable</span>
         </h1>
         <p>
-          Personal budgeting is the secret to financial freedom. Start your journey today.
+          Track your finances, and achieve financial milestones all in one place
         </p>
         <Form method="post">
           <input
