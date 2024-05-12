@@ -23,11 +23,11 @@ svg {
 
 :root {
   /* fonts */
-  --fs-200: clamp(0.78rem, calc(0.71rem + 0.35vw), 0.96rem);
-  --fs-300: clamp(0.94rem, calc(0.84rem + 0.51vw), 1.2rem);
-  --fs-400: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.5rem);
-  --fs-500: clamp(1.94rem, calc(1.56rem + 1.92vw), 2.93rem);
-  --fs-600: clamp(2.8rem, calc(2.11rem + 3.47vw), 4.58rem);
+  --fs-200: clamp(0.62rem, calc(0.71rem + 0.35vw), 0.96rem);
+  --fs-300: clamp(0.84rem, calc(0.84rem + 0.51vw), 1.2rem);
+  --fs-400: clamp(0.98rem, calc(0.98rem + 0.73vw), 1.5rem);
+  --fs-500: clamp(1.6rem, calc(1.56rem + 1.92vw), 2.93rem);
+  --fs-600: clamp(2rem, calc(1.8rem + 2.47vw), 3.5rem);
   --lh-1: 1;
   --lh-1-1: 1.1;
   --lh-1-4: 1.4;
@@ -604,4 +604,78 @@ table a {
 /* toast */
 .Toastify__toast-body {
   font-size: var(--fs-300);
+}
+
+/* Responsiveness */
+
+
+
+/* Extra navlink */
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link img {
+  margin-right: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #333; 
+}
+
+
+
+.nav-links li select {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+.nav-links li select:hover,
+.nav-links li select:focus {
+  outline: none;
+}
+
+/* Style the dropdown arrow */
+.nav-links li select:after {
+  content: '\25BE'; /* Unicode character for down arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Style the options */
+.nav-links li select option {
+  background-color: var(--bkg); /* Set background color */
 }

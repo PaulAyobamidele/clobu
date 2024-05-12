@@ -11,7 +11,7 @@ const Intro = () => {
     <div className="intro">
       <div>
         <h1>
-          Set Financial Goals; <span className="accent">Become Accountable</span>
+          Manage your finances; <span className="accent">Become Accountable</span>
         </h1>
         <p>
           Track your finances, and achieve financial milestones all in one place
