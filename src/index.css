@@ -679,3 +679,11 @@ table a {
 .nav-links li select option {
   background-color: var(--bkg); /* Set background color */
 }
+
+
+/* Define a media query for laptop dimensions */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: none; /* Hide the navlinks */
+  }
+}
